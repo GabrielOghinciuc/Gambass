@@ -1,0 +1,28 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,96,64)
+  { TextLabel1 TextLabel
+    MoveScaled(33,5,41,4)
+    Text = ("Checkboxuri exclusive in grup")
+  }
+  { GrupCheckBox Frame
+    MoveScaled(6,12,81,45)
+    { Ziua CheckBox
+      MoveScaled(2,4,24,4)
+      Text = ("Ziua")
+    }
+    { Noaptea CheckBox
+      MoveScaled(2,11,24,4)
+      Text = ("Noaptea")
+    }
+    { Seara CheckBox
+      MoveScaled(2,18,24,4)
+      Text = ("Seara")
+    }
+    { Dimineata CheckBox
+      MoveScaled(2,24,24,4)
+      Text = ("Dimineata")
+    }
+  }
+}

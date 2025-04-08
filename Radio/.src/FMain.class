@@ -1,0 +1,38 @@
+' Gambas class file
+
+Static hRadioButton As RadioButton
+
+Public Sub Form_Open()
+
+End
+
+Public Sub Button1_Click()
+  
+  If hRadioButton <> Null Then Return
+  hRadioButton = New RadioButton(Frame1) As "RadioButton3"
+  
+  With hRadioButton
+    .X = RadioButton2.X
+    .Y = RadioButton2.Y + (RadioButton2.Y - RadioButton1.Y)
+    .W = RadioButton2.W
+    .H = RadioButton2.H
+    .Text = "Al Treilea"
+    Object.Attach(hRadioButton, FMain, "RadioButton3")
+  End With
+  
+End
+
+Public Sub RadioButton1_Click()
+  Message.Info("Ati dat click pe RadioButton1")
+End
+Public Sub RadioButton2_Click()
+  Message.Info("Ati dat click pe RadioButton2(Exercitiu)")
+End
+Public Sub hRadioButton_Click()
+  Message.Info("Ati dat click pe hRadioButton")
+End
+Public Sub RadioButton3_Click()
+  Message.Info("Ati dat click pe RadioButton3")
+End
+
+

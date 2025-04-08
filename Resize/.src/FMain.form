@@ -1,0 +1,15 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { Button1 Button
+    MoveScaled(4,8,16,4)
+    Text = ("Quit")
+  }
+  { TextArea1 TextArea
+    MoveScaled(4,16,52,35)
+  }
+  { ScrollBar1 ScrollBar
+    MoveScaled(5,55,51,4)
+  }
+}

@@ -1,0 +1,26 @@
+' Gambas class file
+
+Static Public WaitPLS As Boolean
+
+Public Sub Form_Open()
+End
+
+Public Sub GrupCheckBox_Click()
+If WaitPLS = True Then Return
+Dim x As CheckBox
+WaitPLS = True
+For Each x In GrupCheckBox.Children
+  If Last <> x Then x.Value = False
+  Select Case x
+  Case Ziua
+    Print "Ziua"
+    Case Noaptea
+      Print "Noaptea"
+      Case Seara
+        Print "Seara"
+        Case Dimineata
+          Print "Dimineata"
+  End Select
+Next 'x
+  WaitPLS = False
+End

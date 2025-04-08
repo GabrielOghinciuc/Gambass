@@ -1,0 +1,55 @@
+' Gambas class file
+
+Static Public J As CJackpot
+
+Public Sub _new()
+  
+End
+
+Public Sub Form_Open()
+  
+  J = New CJackpot
+  Arata()
+  
+End
+
+Public Sub Button4_Click()
+  
+  With J
+    .R1.Roteste()
+    .R2.Roteste()
+    .R3.Roteste()
+  End With
+  Scor()
+  Arata()
+  
+End
+
+Public Sub Scor()
+  
+  With J
+    If (.R1.Cifra() == .R2.Cifra()) Then
+      .Bani += 100
+    Else
+      .Bani -= 20
+    Endif
+    If .Bani <= 0 Then
+      Arata()
+      Message.Info("Game Over")
+      Me.Close()
+    Endif
+  End With
+  
+End
+
+Public Sub Arata()
+
+  With J
+    
+    Button1.Text = .R1.Cifra()
+    Button2.Text = .R2.Cifra()
+    Button3.Text = .R3.Cifra()
+  End With
+  Label2.Text = Str(J.Bani)
+  
+End

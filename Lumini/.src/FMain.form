@@ -1,0 +1,64 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,108,64)
+  AutoResize = True
+  { R1 PictureBox
+    MoveScaled(5,3,8,6)
+    AutoResize = True
+    Picture = Picture["png-transparent-light-emitting-diode-led-lamp-pink-light-color-sphere-light.png"]
+    Stretch = True
+    Alignment = Align.Center
+  }
+  { R2 PictureBox
+    MoveScaled(15,3,7,6)
+    AutoResize = True
+    Picture = Picture["images.jpeg"]
+    Stretch = True
+  }
+  { R3 PictureBox
+    MoveScaled(24,3,9,6)
+    AutoResize = True
+    Picture = Picture["Stins.png"]
+    Stretch = True
+  }
+  { R4 PictureBox
+    MoveScaled(35,3,7,6)
+    AutoResize = True
+    Picture = Picture["images.jpeg"]
+    Stretch = True
+  }
+  { R5 PictureBox
+    MoveScaled(43,3,8,6)
+    AutoResize = True
+    Picture = Picture["Stins.png"]
+    Stretch = True
+    Alignment = Align.Normal
+  }
+  { R6 PictureBox
+    MoveScaled(52,3,8,6)
+    AutoResize = True
+    Picture = Picture["images.jpeg"]
+    Stretch = True
+    Alignment = Align.Normal
+  }
+  { R7 PictureBox
+    MoveScaled(62,3,8,6)
+    AutoResize = True
+    Picture = Picture["Stins.png"]
+    Stretch = True
+    Alignment = Align.Normal
+  }
+  { R8 PictureBox
+    MoveScaled(71,3,7,6)
+    AutoResize = True
+    Picture = Picture["images.jpeg"]
+    Stretch = True
+    Alignment = Align.Normal
+  }
+  { Timer1 #Timer
+    #MoveScaled(80,3)
+    Enabled = True
+    Delay = 200
+  }
+}

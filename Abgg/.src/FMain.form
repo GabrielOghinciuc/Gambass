@@ -1,0 +1,69 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,100,71)
+  { TextBox1 TextBox
+    MoveScaled(38,6,34,4)
+    Text = ("<Scrieti textul aici>")
+  }
+  { TextLabel1 TextLabel
+    MoveScaled(8,6,24,4)
+    Text = ("Enter Some Text:")
+  }
+  { btnupdate Button
+    MoveScaled(79,6,16,4)
+    Text = ("Update")
+  }
+  { Frame1 Frame
+    MoveScaled(50,25,49,28)
+    { CheckBox1 CheckBox
+      MoveScaled(2,0,24,4)
+      Text = ("Checkbox Nr1")
+    }
+    { CheckBox2 CheckBox
+      MoveScaled(2,5,24,4)
+      Text = ("CheckBox Nr2")
+    }
+    { CheckBox3 CheckBox
+      MoveScaled(2,10,24,4)
+      Text = ("CheckBox Nr3")
+    }
+    { ToggleButton1 ToggleButton
+      MoveScaled(27,1,16,4)
+      Text = ("ToggleButton 1")
+    }
+    { ToggleButton2 ToggleButton
+      MoveScaled(27,8,16,4)
+      Text = ("ToggleButton 2")
+    }
+  }
+  { TextLabel2 TextLabel
+    MoveScaled(6,14,24,4)
+    Text = ("set-2022")
+  }
+  { ComboBox1 ComboBox
+    MoveScaled(5,22,24,4)
+  }
+  { btnplus Button
+    MoveScaled(30,22,6,4)
+    Text = ("+")
+  }
+  { btnminus Button
+    MoveScaled(38,22,5,4)
+    Text = ("-")
+  }
+  { btnquit Button
+    MoveScaled(80,65,16,4)
+    Text = ("Quit")
+  }
+  { RadioButton1 RadioButton
+    MoveScaled(4,55,24,4)
+    Text = ("Haha RB1")
+  }
+  { RadioButton2 RadioButton
+    MoveScaled(4,60,24,4)
+  }
+  { ListBox1 ListBox
+    MoveScaled(5,28,43,25)
+  }
+}

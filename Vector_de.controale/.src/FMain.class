@@ -1,0 +1,71 @@
+' Gambas class file
+
+Private aButtons[13] As Button
+
+Public Sub Form_Open()
+  
+  Dim i As Integer
+  
+  btnclose.Tooltip = ("Quit")
+Me.Center
+For i = 1 To 12
+  aButtons[i] = New Button(Me) As "Buttongroup"
+  With aButtons[i]
+    .X = (i - Int((i - 1) / 3) * 3) * 60 - 30
+    .Y = Int((i - 1) / 3) * 60 + 170
+    .Width = 42
+    .Height = 42
+    .Font.Grade = 5
+    If i = 10 Then
+      .Text = "*"
+      Else If i = 11 Then
+        Else If i = 12 Then
+          
+        .Text = "#"
+        Else
+          .Text = i
+    Endif
+  End With
+Next
+End
+
+Public Sub Buttongroup_click()
+  
+  tbnumber.Text = tbnumber.Text + Last.Text
+  
+End
+Public Sub Buttongroup_Menu()
+  
+  If tbnumber.Text = "" Then
+    Me.Close
+    Else
+      tbnumber.Text = ""
+  Endif
+  
+End
+
+Public Sub Form_KeyPress()
+  
+  If Key.Code = Key.Esc Then Me.Close
+  
+End
+Public Sub tbnumber_Change()
+  
+  If tbnumber.Text = "" Then
+    btnclose.Tooltip = ("Quit")
+    Else
+      btnclose.Tooltip = ("clear")
+  Endif
+  
+End
+Public Sub btndial_Click()
+  
+  If tbnumber.Text = " " Then
+    Message.Warning(("Nu este numar de apelat"))
+  Else
+    Message.Info(("Dialing") & tbnumber.text)
+  Endif
+  
+End
+
+

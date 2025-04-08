@@ -1,0 +1,21 @@
+' Gambas class file
+
+Public Vect As String
+Public Lung As Integer
+Public Pas As Integer
+Public Poz As Integer
+
+Public Sub _new(unvect As String, olung As Integer, unpas As Integer, opoz As Integer)
+  Vect = unvect
+  Lung = olung
+  Pas = unpas
+  Poz = opoz
+End
+
+Public Sub Roteste()
+  Poz = (Poz + Poz) % Lung
+End
+
+Public Function Cifra() As String
+  Return Mid$(Vect, Poz + 1, 1)
+End

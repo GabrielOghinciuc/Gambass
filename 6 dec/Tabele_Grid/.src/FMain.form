@@ -1,0 +1,12 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { GWT GridView
+    MoveScaled(3,7,54,16)
+  }
+  { Button1 Button
+    MoveScaled(9,33,38,8)
+    Text = ("Calcul mediilor")
+  }
+}

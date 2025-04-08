@@ -1,0 +1,35 @@
+' Gambas class file
+
+
+Public Sub Operator_adunare_Click()
+
+  Rezultat.Text = Str$(SpinBox2.Value + SpinBox1.Value)
+
+End
+
+Public Sub Operator_minus_Click()
+  
+  Rezultat.Text = Str$(SpinBox1.Value - SpinBox2.Value)
+  
+End
+
+
+Public Sub operator_inmultit_Click()
+  
+  Rezultat.Text = Str$(SpinBox1.Value * SpinBox2.Value)
+  
+End
+
+Public Sub Operator_impartit_click()
+
+If SpinBox2.Value <> 0 Then
+  Rezultat.Text = (SpinBox2.Value / SpinBox1.Value)
+  Else
+    Message.Error("Impartirea la 0 nu se poate !")
+    
+End If
+
+End
+
+
+

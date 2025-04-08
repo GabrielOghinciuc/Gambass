@@ -1,0 +1,57 @@
+' Gambas class file
+
+
+Public Sub Form_Open()
+
+  FMain.Caption = "ColumnView Example"
+
+End
+
+Public Sub _new()
+  
+  Dim iw As Integer
+  Dim irc As Integer
+  Dim icc As Integer = 0
+  
+  ColumnView1.Columns.Count = 3
+  
+  iw = ColumnView1.Width / ColumnView1.Columns.Count
+  
+  ColumnView1.Columns[0].Width = iw
+  ColumnView1.Columns[0].Text = "First column"
+  
+  ColumnView1.Columns[1].Width = iw
+  ColumnView1.Columns[1].Text = "Second column"
+  
+  ColumnView1.Columns[2].Width = iw
+  ColumnView1.Columns[2].Text = "Third column"
+  
+  For irc = 0 To 4
+     ColumnView1.Add(irc, icc)
+     For icc = 0 To ColumnView1.Columns.Count - 1
+       ColumnView1[irc][icc] = "Column: " & icc & "Row: " & irc
+     Next
+  Next
+  
+End
+
+
+
+Public Sub Button1_Click()
+
+  Me.Close
+
+End
+
+Public Sub Button2_Click()
+
+  ColumnView1.Clear
+
+End
+
+Public Sub Button3_Click()
+
+  ColumnView1.Clear
+  _new
+
+End

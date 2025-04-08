@@ -1,0 +1,16 @@
+' Gambas class file
+
+
+Public Sub Scrie_ti_Numele_Aici_MouseDown()
+
+  
+
+End
+
+Public Sub Button1_Click()
+
+  Print "Ma bucur sa lucrez cu tine", Nume_Interlocutor.Text, "!!"
+  Raspuns.Text = "Ma bucur sa lucrez cu tine " & Nume_Interlocutor.Text & "!"
+  
+
+End

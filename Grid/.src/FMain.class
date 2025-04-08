@@ -1,0 +1,72 @@
+' Gambas class file
+
+Public Sub Form_Open()
+  FMain.Caption = "GridView Exemple"
+End
+Public Sub _new()
+Dim hpic1 As Picture
+Dim hpic2 As Picture
+Dim hpic3 As Picture
+hpic1 = New Picture
+hpic1 = hpic1.Load("ball1.png")
+hpic2 = New Picture
+hpic2 = hpic2.Load("ball2.png")
+hpic3 = New Picture
+hpic3 = hpic3.Load("ball3.png")
+GridView1.Columns.Count = 3
+GridView1.Rows.Count = 4
+GridView1.Columns.Width = 144
+GridView1.Rows.Height = 36
+GridView1[0, 0].Text = "0,0"
+GridView1[0, 1].Text = "0,1"
+GridView1[0, 2].Text = "0,2"
+GridView1[1, 0].Text = "1,0"
+GridView1[1, 1].Text = "1,1"
+GridView1[1, 2].Text = "1,2"
+GridView1[2, 0].Alignment = Align.Center
+GridView1[2, 1].Alignment = Align.BottomLeft
+GridView1[2, 2].Alignment = Align.TopRight
+GridView1[2, 0].Text = "2,0"
+GridView1[2, 1].Text = "2,1"
+GridView1[2, 2].Text = "1,2"
+GridView1[3, 0].Picture = hpic1
+GridView1[3, 1].Picture = hpic2
+GridView1[3, 2].Picture = hpic3
+End
+
+Public Sub Button1_Click()
+Me.Close
+End
+Public Sub Button2_Click()
+  GridView1.Clear
+End
+Public Sub Button3_Click()
+_new()
+End
+
+Public Sub Button4_Click()
+Dim EnteredData As String
+Dim Row As Integer
+Dim Column As Integer
+Dim Columns As Integer
+Row = CInt(TextBox2.Text)
+Column = CInt(TextBox3.Text)
+If (Row > 3 Or Column > 2) Then
+  Message.Info("Sorry Rows must be 0-3 ad Columns must be 0-2")
+  TextLabel1.Text = "Sorry,Rows must be 0-3 and Columns must be 0-2"
+  Return
+Endif
+EnteredData = TextBox1.Text
+GridView1[Row, Columns].Text = TextBox1.Text
+End
+Public Sub Button5_Click()
+TextBox2.Text = ""
+TextBox3.Text = ""
+TextLabel1.Text = ""
+End
+
+Public Sub GridView1_Click()
+TextBox1.Text = GridView1.Current.Text
+TextBox2.Text = GridView1.Row
+TextBox3.Text = GridView1.Column
+End

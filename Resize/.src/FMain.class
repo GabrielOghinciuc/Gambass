@@ -1,0 +1,38 @@
+' Gambas class file
+
+Static Public DistSBarDeJos As Integer = 0
+Static Public DistSBarDinDr As Integer = 0
+Static Public DistSBarDinStg As Integer = 0
+Public Sub Form_Open()
+DistSBarDeJos = FMain.H - ScrollBar1.Y
+DistSBarDinDr = FMain.W - ScrollBar1.W - ScrollBar1.X
+DistSBarDinStg = ScrollBar1.X
+  TextArea1.Text = "Lorem ipsum dolor sit amet,consectetur \n"
+  ".\n"
+  ".\n"
+".\n"
+".\n"
+".\n"
+".\n"
+End
+
+Public Sub ScrollBar1_Change()
+  TextArea1.Text = Str(ScrollBar1.Value)
+End
+ Public Sub Button1_Click()
+  Quit
+End
+
+Public Sub Form_Resize()
+  Print FMain.X, FMain.Y, FMain.W, FMain.H
+  ScrollBar1.Y = FMain.H - DistSBarDeJos
+  ScrollBar1.W = FMain.W - DistSBarDinDr - ScrollBar1.X
+  
+  TextArea1.W = FMain.W - DistSBarDinDr - ScrollBar1.X
+  TextArea1.H = ScrollBar1.Y - 15 - TextArea1.Y
+  TextArea1.Show
+End
+
+Public Sub Form_Move()
+  Print FMain.X, FMain.Y, FMain.W, FMain.H
+End

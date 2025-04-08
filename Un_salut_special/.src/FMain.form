@@ -1,0 +1,20 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,35)
+  { Scrie_ti_Numele_Aici Label
+    MoveScaled(10,4,24,4)
+    #Translate = False
+    Text = "Scrie-ti Numele Aici"
+  }
+  { Button1 Button
+    MoveScaled(38,18,17,4)
+    Text = ("Salut")
+  }
+  { Raspuns Label
+    MoveScaled(9,29,47,4)
+  }
+  { Nume_Interlocutor TextBox
+    MoveScaled(35,4,24,4)
+  }
+}

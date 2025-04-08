@@ -1,0 +1,42 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,81,64)
+  { GridView1 GridView
+    MoveScaled(3,5,56,34)
+  }
+  { Button1 Button
+    MoveScaled(63,4,16,4)
+    Text = ("1.Quit")
+  }
+  { Button2 Button
+    MoveScaled(63,9,16,4)
+    Text = ("2.Clear")
+  }
+  { Button3 Button
+    MoveScaled(63,14,16,4)
+    Text = ("3.Reset")
+  }
+  { Button4 Button
+    MoveScaled(63,46,16,4)
+    Text = ("5.Clr Row/Column")
+  }
+  { Button5 Button
+    MoveScaled(28,46,16,4)
+    Text = ("4.insert Data")
+  }
+  { TextBox2 TextBox
+    MoveScaled(44,46,8,4)
+    Text = ("0")
+  }
+  { TextBox3 TextBox
+    MoveScaled(53,46,8,4)
+    Text = ("0")
+  }
+  { TextLabel1 TextLabel
+    MoveScaled(2,46,24,4)
+  }
+  { TextBox1 TextBox
+    MoveScaled(1,50,24,4)
+  }
+}

@@ -1,0 +1,44 @@
+' Gambas class file
+
+
+Public Sub Form_Open()
+End
+
+Public Sub Form_Resize()
+  W2.X = 10
+  W2.Y = 10
+  W2.H = 50
+  W2.W = 90
+  
+  W4.X = FMain.W - 100 - 10
+  W4.Y = FMain.H - 10 - 50
+  W4.W = 100
+  W4.H = 50
+  
+  W3.X = 10
+  W3.Y = FMain.H - 10 - 50
+  W3.H = 50
+  W3.W = FMain.W - 10 - 100 - 10 - 10
+  
+  W2.X = 10
+  W2.Y = 10 + 50 + 10
+  W2.H = FMain.H - 10 - 50 - 10 - 10 - 50 - 10
+  W2.W = FMain.W - 10 - 10
+End
+
+Public Sub GrupW14_Enter()
+  Last.Font.Size = 9
+  Last.Font.Size = 9
+  Last.Text = (Last.Name & ".X=" & Last.X & "\n" &
+  Last.Name & ".Y=" & Last.Y & "\n" &
+  Last.Name & ".H=" & Last.H & "\n" &
+  Last.Name & ".H=" & Last.H & "\n" &
+  "FMain.H =" & FMain.H & "\n" & "FMain.W=" & FMain.W & FMain.W & "\n")
+  
+End
+ Public Sub GrupW14_Leave()
+  W2.Text = "Quit"  
+End
+Public Sub GrupW14_Click()
+  Quit
+End

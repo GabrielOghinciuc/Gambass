@@ -1,0 +1,41 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { ProgressBar1 ProgressBar
+    MoveScaled(6,10,24,4)
+  }
+  { TextLabel1 TextLabel
+    MoveScaled(5,5,24,4)
+    Text = ("Operatia Curenta")
+  }
+  { ProgressBar2 ProgressBar
+    MoveScaled(6,30,24,4)
+  }
+  { Button1 Button
+    MoveScaled(40,32,16,4)
+    Text = ("Start")
+  }
+  { Button2 Button
+    MoveScaled(40,39,16,4)
+    Text = ("Quit")
+  }
+  { TextLabel2 TextLabel
+    MoveScaled(6,24,24,4)
+    Text = ("Progres din total")
+  }
+  { Timer1 #Timer
+    #MoveScaled(27,16)
+  }
+  { Timer2 #Timer
+    #MoveScaled(25,40)
+  }
+  { Label1 Label
+    MoveScaled(9,41,14,3)
+    Text = ("Procent ramas :")
+  }
+  { Label2 Label
+    MoveScaled(8,18,16,4)
+    Text = ("Procent actualizat:")
+  }
+}

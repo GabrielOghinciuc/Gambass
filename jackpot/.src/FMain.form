@@ -1,0 +1,28 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { Button1 Button
+    MoveScaled(0,17,16,22)
+    Text = ("3")
+  }
+  { Button2 Button
+    MoveScaled(19,17,16,22)
+    Text = ("1")
+  }
+  { Button3 Button
+    MoveScaled(37,17,16,22)
+    Text = ("7")
+  }
+  { Button4 Button
+    MoveScaled(56,17,7,39)
+  }
+  { Label1 Label
+    MoveScaled(2,7,24,4)
+    Text = ("Bani/Scor:")
+  }
+  { Label2 Label
+    MoveScaled(26,7,24,4)
+    Text = ("620")
+  }
+}

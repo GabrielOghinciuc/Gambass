@@ -1,0 +1,34 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,109,55)
+  { ProgressBar1 ProgressBar
+    MoveScaled(5,17,74,5)
+  }
+  { FunButton Button
+    MoveScaled(6,25,73,10)
+    Text = ("Click me for fun")
+  }
+  { noFunButton Button
+    MoveScaled(6,37,73,10)
+    Text = ("Click me for less fun")
+  }
+  { Button3 Button
+    MoveScaled(87,23,16,4)
+    Text = ("Quit")
+  }
+  { PictureBox1 PictureBox
+    MoveScaled(86,4,16,16)
+    Picture = Picture["gambas-logo.png"]
+    Stretch = True
+  }
+  { Label1 Label
+    MoveScaled(5,10,20,4)
+  }
+  { Label2 Label
+    MoveScaled(34,10,20,4)
+  }
+  { Label3 Label
+    MoveScaled(60,10,19,4)
+  }
+}

@@ -1,0 +1,14 @@
+' Gambas class file
+
+Public R1 As CRoata
+Public R2 As CRoata
+Public R3 As CRoata
+
+Public Bani As Integer
+
+Public Sub _new()
+  Bani = 200
+  R1 = New CRoata("1234567890123456789", 19, 17, 1)
+  R2 = New CRoata("11223344556677889", 17, 13, 3)
+  R3 = New CRoata("9876543210987", 13, 7, 4)
+End

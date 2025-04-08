@@ -1,0 +1,122 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,47,36)
+  { TabStrip1 TabStrip
+    MoveScaled(2,2,43,32)
+    Count = 4
+    Index = 0
+    Text = ("Triunghi")
+    { Label1 Label
+      MoveScaled(1,3,5,4)
+      Text = ("Baza")
+    }
+    { Button1 Button
+      MoveScaled(0,13,31,7)
+      Text = ("Calcul")
+    }
+    { Label3 Label
+      MoveScaled(0,22,12,4)
+      Text = ("Rezutat")
+    }
+    { Label2 Label
+      MoveScaled(1,8,9,4)
+      Text = ("Inaltimea")
+    }
+    { TextBox1 ValueBox
+      MoveScaled(10,3,23,4)
+    }
+    { TextBox2 ValueBox
+      MoveScaled(10,8,24,4)
+    }
+    { TextBox3 ValueBox
+      MoveScaled(13,22,24,4)
+      Enabled = False
+    }
+    Index = 1
+    Text = ("Cerc")
+    { Button2 Button
+      MoveScaled(0,14,33,9)
+      Text = ("Calcul")
+    }
+    { Label4 Label
+      MoveScaled(1,23,13,4)
+      Text = ("Aria Cercului")
+    }
+    { Label5 Label
+      MoveScaled(1,4,13,4)
+      Text = ("Raza")
+    }
+    { TextBox4 ValueBox
+      MoveScaled(15,4,24,4)
+    }
+    { TextBox5 ValueBox
+      MoveScaled(16,23,24,4)
+      Enabled = False
+    }
+    Index = 2
+    Text = ("Dreptunghi")
+    { Label6 Label
+      MoveScaled(1,3,10,4)
+      Text = ("Baza")
+    }
+    { Label7 Label
+      MoveScaled(1,8,11,4)
+      Text = ("Inaltimea")
+    }
+    { Button3 Button
+      MoveScaled(1,13,36,9)
+      Text = ("Calcul")
+    }
+    { Label8 Label
+      MoveScaled(1,23,11,4)
+      Text = ("Rezultat")
+    }
+    { TextBox6 ValueBox
+      MoveScaled(13,3,24,4)
+    }
+    { TextBox7 ValueBox
+      MoveScaled(13,8,24,4)
+    }
+    { TextBox8 ValueBox
+      MoveScaled(13,23,24,4)
+      Enabled = False
+    }
+    Index = 3
+    Text = ("Trapez")
+    { Label9 Label
+      MoveScaled(1,2,10,4)
+      Text = ("Baza1")
+    }
+    { Label10 Label
+      MoveScaled(1,6,9,4)
+      Text = ("Baza2")
+    }
+    { Label11 Label
+      MoveScaled(1,10,11,4)
+      Text = ("Inaltimea")
+    }
+    { Button4 Button
+      MoveScaled(1,14,34,8)
+      Text = ("Calcul")
+    }
+    { Label12 Label
+      MoveScaled(1,23,13,4)
+      Text = ("Rezultat")
+    }
+    { TextBox9 ValueBox
+      MoveScaled(11,2,24,4)
+    }
+    { TextBox10 ValueBox
+      MoveScaled(11,6,24,4)
+    }
+    { TextBox11 ValueBox
+      MoveScaled(11,10,24,4)
+    }
+    { TextBox12 ValueBox
+      MoveScaled(16,23,24,4)
+      Enabled = False
+    }
+    Index = 0
+  }
+}

@@ -1,0 +1,49 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,94,69)
+  { Button1 Button
+    MoveScaled(4,4,19,34)
+  }
+  { Button2 Button
+    MoveScaled(24,4,21,34)
+  }
+  { Button3 Button
+    MoveScaled(46,4,21,34)
+  }
+  { Button4 Button
+    MoveScaled(68,4,21,34)
+  }
+  { Label1 Label
+    MoveScaled(1,40,28,4)
+    Text = ("Esti acum in camera cu numarul")
+  }
+  { Label2 Label
+    MoveScaled(2,45,24,4)
+    Text = ("Acesta este")
+  }
+  { Label3 Label
+    MoveScaled(2,51,24,4)
+    Text = ("Aici se afla un")
+  }
+  { Label4 Label
+    MoveScaled(2,55,24,4)
+    Text = ("Sunt si bani in numar de")
+  }
+  { Label5 Label
+    MoveScaled(2,60,24,4)
+    Text = ("Pe ce usa vrei sa iesi")
+  }
+  { Label6 Label
+    MoveScaled(29,40,24,4)
+  }
+  { Label7 Label
+    MoveScaled(15,45,24,4)
+  }
+  { Label8 Label
+    MoveScaled(17,51,24,4)
+  }
+  { Label9 Label
+    MoveScaled(23,55,24,4)
+  }
+}

@@ -1,0 +1,20 @@
+' Gambas class file
+
+Public Nr As Integer
+Public Denumire As String
+Public Artefact As String
+Public Usa[4] As Integer
+Public Bani As Integer
+
+Public Sub _new(unNr As Integer, oDenumire As String, unArtefact As String, usa0 As Integer, usa1 As Integer, usa2 As Integer, usa3 As Integer, nisteBani As Integer)
+  With Me
+    .Nr = unNr
+    .Denumire = oDenumire
+    .Artefact = unArtefact
+    .Usa[0] = usa0
+    .Usa[1] = usa1
+    .Usa[2] = usa2
+    .Usa[3] = usa3
+    .Bani = nisteBani
+  End With
+End

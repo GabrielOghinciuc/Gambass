@@ -1,0 +1,123 @@
+' Gambas class file
+
+
+Public Sub Form_Open()
+Me.Caption = "*** Proiect No 3***"
+TextLabel1.Text = "Aici este un element: TextLabel1"
+End
+Public Sub btnquit_Click()
+  FMain.Close()
+End
+Public Sub btnupdate_Click()
+  TextLabel1.Text = "<b>" & TextBox1.Text & "</b>"
+  
+End
+Public Sub TextBox1_Enter()
+  TextBox1.Clear
+End
+
+Public Sub TextBox1_Leave()
+  TextLabel1.Text = "<b>" & TextBox1.Text & "</b>"
+  TextBox1.Text = "<Scrieti textul aici>"
+End
+Public Sub Form_MouseDown()
+  btnupdate.Hide
+End
+Public Sub Form_DblClick()
+  btnupdate.Show
+End
+Public Sub ComboBox1_Change()
+  Dim rezulta As String
+  rezulta = Trim(ComboBox1.Text)
+  TextLabel1.Text = "<b>" & rezulta & "</b> a fost selectat din ComboBox1 " ""
+End
+ Public Sub btnplus_Click()
+  Dim item As String
+  Dim numar As Integer
+  ComboBox1.Refresh
+  Numar = ComboBox1.Count
+  If numar = 0 Then
+    item = "Alege un item"
+    Else
+      item = "Item" & Str(numar)
+  Endif
+  ComboBox1.Refresh
+  ComboBox1.Add(item, numar)
+End
+
+Public Sub btnminus_Click()
+  Dim numar As Integer
+  ComboBox1.Refresh
+  numar = ComboBox1.Count
+  If numar > 0 Then
+    Dec numar
+    If numar <> 0 Then
+  ComboBox1.Remove(numar)
+  Endif
+  ComboBox1.Refresh
+  Endif
+End
+
+Public Sub ListBox1_Click()
+  If Trim(ListBox.Text) = "Charset" Then
+    TextLabel1.Text = System.Charset
+    Else If Trim(ListBox1.Text) = "Domain" Then
+    TextLabel1.Text = System.Domain
+    Else If Trim(ListBox1.Text) = "Shell" Then
+      TextLabel1.Text = System.Shell
+      Else If Trim(ListBox1.Text) = "Host" Then
+      TextLabel1.Text = System.Host
+      Else If Trim(ListBox1.Text) = "Language" Then
+      TextLabel1.Text = System.Language
+      Else If Trim(ListBox1.Text) = "Path" Then
+      TextLabel1.Text = System.Path
+      Else If Trim(ListBox1.Text) = "User" Then
+      TextLabel1.Text = System.User
+  Endif
+End
+Public Sub ToggleButton1_Click()
+  If ToggleButton1.Value = True Then
+  Frame1.Text = "Butonul de sus a fost apasat"
+  Else
+  Frame1.Text = "Butonul de sus a fost ridicat"
+  Endif
+End
+ Public Sub ToggleButton2_Click()
+  If ToggleButton2.Value = True Then
+    Frame1.Text = "Butonul de jos a fost apasat"
+    Else
+      Frame1.Text = "Butonul de jos a fost ridicat"
+  Endif
+End
+
+Public Sub CheckBox1_Click()
+  If CheckBox1.Value = True Then
+    CheckBox1.Text = "Am fost ales"
+    Else
+      CheckBox1.Text = "CheckBox Nr 1"
+  Endif
+End
+Public Sub CheckBox2_Click()
+  If CheckBox2.Value = True Then
+    CheckBox2.Text = "Am fost ales"
+    Else
+      CheckBox2.Text = "CheckBox Nr 2"
+  Endif
+End
+Public Sub CheckBox3_Click()
+  If CheckBox1.Value = True Then
+    CheckBox3.Text = "Am fost ales"
+    Else
+      CheckBox3.Text = "CheckBox Nr 3"
+  Endif
+End
+Public Sub RadioButton1_Click()
+  RadioButton1.Text = "Haha RB1"
+  RadioButton2.Text = "RadioButton2"
+End
+ Public Sub RadioButton2_Click()
+  RadioButton2.Text = "Haha RB2"
+  RadioButton1.Text = "RadioButton1"
+End
+
+

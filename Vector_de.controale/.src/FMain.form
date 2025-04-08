@@ -1,0 +1,15 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { btndial Button
+    MoveScaled(6,17,21,7)
+    ToolTip = ("Explicatie")
+  }
+  { btnclose Button
+    MoveScaled(31,17,22,7)
+  }
+  { tbnumber TextBox
+    MoveScaled(9,4,36,8)
+  }
+}

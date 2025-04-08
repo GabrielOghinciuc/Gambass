@@ -1,0 +1,18 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { GrupW14 Button
+    MoveScaled(2,2,16,4)
+    Text = ("Quit")
+  }
+  { W2 TextArea
+    MoveScaled(2,9,60,42)
+  }
+  { W3 TextArea
+    MoveScaled(1,53,38,8)
+  }
+  { W4 TextArea
+    MoveScaled(44,53,16,8)
+  }
+}

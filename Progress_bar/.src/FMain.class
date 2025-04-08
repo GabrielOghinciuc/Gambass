@@ -1,0 +1,93 @@
+' Gambas class file
+
+
+Public Sub Form_Open()
+
+  ProgressBar1.Value = 0.50 '%
+  ProgressBar1.Background = Color.Black
+  ProgressBar1.Foreground = Color.Yellow
+End
+
+Public Sub Form_Enter()
+  
+  Label1.text = ""
+  Label2.text = ""
+  Label3.text = ""
+  
+End
+Public Sub Form_Leave()
+  
+  ProgressBar1.Value = 0.50
+  Label1.text = "Wasn't that"
+  Label2.text = "some real"
+  Label3.text = "fun stuf?"
+End
+ Public Sub Label1_Enter()
+  
+  Label1.text = "Here is the"
+End
+Public Sub Label2_Enter()
+
+Label2.text = "Gambas mascot"
+End
+
+Public Sub Label3_Enter()
+  
+  Label3.text = "---->"
+  
+End
+
+Public Sub PictureBox1_Enter()
+  
+  Label1.text = ""
+  Label2.text = ""
+  Label3.text = ""
+  PictureBox1.Border = Border.Plain
+  
+End
+Public Sub PictureBox1_Leave()
+  
+  Label1.text = "Wasn't that"
+  Label2.text = "Some real"
+  Label3.text = "fub stuf?"
+  PictureBox1.Border = Border.Sunken  
+End
+Public Sub Button3_Click()
+  
+  FMain.Close
+  Quit
+End
+Public Sub FunButon_DblClick()
+Print "FunButton_DblClick()"
+ProgressBar1.Value = ProgressBar1.Value + 0.08
+If ProgressBar1.Value > 0.90 Then
+  ProgressBar1.Value = 0.0
+Endif
+End
+
+Public Sub FunButton_DblClick()
+Print "FunButton_DblClick()"
+ProgressBar1.Value = ProgressBar1.Value - 0.08
+If ProgressBar1.Value < 0.1 Then
+  ProgressBar1.Value = 1.0
+Endif
+End
+Public Sub FunButton_Click()
+  
+  Print "FunButton_Click()"
+  ProgressBar1.Value = ProgressBar1.Value + 0.01
+  If ProgressBar1.Value > 0.99 Then
+    ProgressBar1.Value = 0.0
+  Endif
+  
+End
+Public Sub noFunButton_Click()
+  
+  Print "noFunButton_Click()"
+  ProgressBar1.Value = ProgressBar1.Value - 0.01
+  If ProgressBar1.Value < 0.01 Then
+    ProgressBar1.Value = 1.0
+  Endif
+  
+End
+

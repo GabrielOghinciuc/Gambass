@@ -1,0 +1,31 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { Label1 Label
+    MoveScaled(20,6,24,4)
+    Text = ("Simulator de zar")
+  }
+  { Button1 Button
+    MoveScaled(8,17,46,4)
+    Text = ("Calcul")
+  }
+  { SpinBox1 SpinBox
+    MoveScaled(7,28,9,4)
+  }
+  { SpinBox2 SpinBox
+    MoveScaled(24,28,9,4)
+  }
+  { SpinBox3 SpinBox
+    MoveScaled(44,28,9,4)
+  }
+  { SpinBox4 SpinBox
+    MoveScaled(6,45,9,4)
+  }
+  { SpinBox5 SpinBox
+    MoveScaled(25,44,9,4)
+  }
+  { SpinBox6 SpinBox
+    MoveScaled(45,44,9,4)
+  }
+}

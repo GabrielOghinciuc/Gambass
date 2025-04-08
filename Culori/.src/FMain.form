@@ -1,0 +1,46 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { cmdQuit Button
+    MoveScaled(43,22,18,8)
+    Text = ("Quit")
+  }
+  { ToggleButton ToggleButton
+    MoveScaled(4,24,25,4)
+    Text = ("Background/Foreground")
+  }
+  { ScrollBarRosu ScrollBar
+    MoveScaled(21,37,36,4)
+  }
+  { ScrollBarVerde ScrollBar
+    MoveScaled(21,45,36,4)
+  }
+  { ScrollBarAlbastru ScrollBar
+    MoveScaled(21,53,36,4)
+  }
+  { lblPatrulater Label
+    MoveScaled(11,7,43,9)
+    Text = ("            Medii si instrumente de programare")
+  }
+  { LabelRosu Label
+    MoveScaled(2,37,14,4)
+    Text = ("Rosu47")
+  }
+  { LabelVerde Label
+    MoveScaled(2,46,12,4)
+    Text = ("Verde170")
+  }
+  { LabelAlbastru Label
+    MoveScaled(2,53,13,4)
+    Text = ("Albastru17")
+  }
+  { MinValue Label
+    MoveScaled(21,32,5,4)
+    Text = ("0")
+  }
+  { MaxValue Label
+    MoveScaled(52,32,5,4)
+    Text = ("255")
+  }
+}

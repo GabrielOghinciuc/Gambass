@@ -1,0 +1,67 @@
+' Gambas class file
+
+Static Public i As Integer = 1
+Static Public j As Integer = 1
+
+Public Sub Form_Open()
+Dim i As Integer
+Dim j As Integer
+GWT.Rows.Count = 10
+GWT.Columns.Count = 10
+GWT[0, 0].Text = "Nr.Crt"
+GWT[0, 1].Text = "Numele si Prenumele"
+GWT[0, 2].Text = "Nota 1"
+GWT[0, 3].Text = "Nota 2"
+GWT[0, 4].Text = "Media"
+GWT[0, 5].Text = "Obs"
+For i = 0 To 9
+  GWT[i, 0].Background = Color.RGB(200, 200, 200)
+  If i > 0 Then
+   GWT[i, 0].Text = Str(i) 
+  Endif
+Next
+  For j = 0 To 9
+    GWT[0, j].Background = Color.RGB(200, 200, 200)
+  Next
+  GWT.Show()
+End
+
+Public Sub GWT_KeyPress()
+  
+  Dim L As Integer
+  If Key.Code = Key.Up And i > 1 Then
+    Debug "Up"
+    i -= 1
+    Else If Key.Code = Key.Down And i < 9 Then
+      Debug "Down"
+      i += 1
+      Else If Key.Code = Key.Left And j > 1 Then
+        Debug "Left"
+        j -= 1
+        Else If Key.Code = Key.Right And j < 9 Then
+          Debug "Right"
+          j += 1
+          Else If (Key.Code = Key.BackSpace And GWT[i, j].Text) <> "" Then
+            L = Len(GWT[i, j].Text)
+            GWT[i, j].Text = Left(GWT[i, j].Text, L - 1)
+            Else If Chr$(Key.Code) Like "[A-Za-z0-9]" Then
+              GWT[i, j].Text = GWT[i, j].Text & Chr$(Key.Code)
+              Else
+                Debug Chr$(Key.Code)
+  Endif
+End
+
+Public Sub Button1_Click()
+  
+  Dim i As Integer
+  Dim x As Integer
+  Dim y As Integer
+  For i = 1 To GWT.Rows.Count - 1
+    If GWT[i, 1].Text <> "" Then
+      x = Eval(GWT[i, 2].Text)
+      Y = Eval(GWT[i, 3].Text)
+      GWT[i, 4].Text = Str$((x + y) / 2)
+    Endif
+  Next
+  
+End

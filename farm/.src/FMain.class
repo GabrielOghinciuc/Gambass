@@ -1,0 +1,34 @@
+' Gambas class file
+
+Public Sub Form_Open()
+  SetUpMenu
+End
+
+Public Sub SetUpMenu()
+
+  Dim hmenu, hmenuitem As Menu
+  Dim stemp As String
+  Dim smenuname As String[] = ["one", "two", "four", "eight", "clear"]
+
+  hmenu = New Menu(Me)
+  hmenu.Text = "&Main menu"
+
+  For Each stemp In smenuname
+    hmenuitem = New Menu(hmenu) As "MyMenu"
+    
+    hmenuitem.Text = "&" & stemp
+    hmenuitem.Name = stemp
+    
+    hmenuitem.Shortcut = "alt+" & Left(stemp, 1)
+  Next
+End
+
+Public Sub MyMenu_Click()
+  Print ">" & Last.Name & "<" 
+  If Last.name <> "Clear" Then
+    TextArea1.Text &= Last.name & gb.NewLine
+    Else
+      TextArea1.Clear
+  Endif
+End
+

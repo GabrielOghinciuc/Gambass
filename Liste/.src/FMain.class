@@ -1,0 +1,26 @@
+' Gambas class file
+
+Static Public Anterior As String = ""
+Public Sub Form_Open()
+
+  
+
+End
+
+Public Sub PuneInLista_Click()
+  
+  If Anterior = ElementNou.Text Then
+    Else
+      Condimente.Add(ElementNou.Text)
+      Anterior = ElementNou.Text
+      
+  Endif
+  
+End
+
+Public Sub Transfer_Click()
+  
+  Ciorba.Add(Condimente.Text)
+  
+End
+

@@ -1,0 +1,12 @@
+' Gambas class file
+
+
+
+Public Sub_new()
+End
+
+Public Sub ButtonDescarca_Click()
+Dim hProc As Process
+  
+
+End

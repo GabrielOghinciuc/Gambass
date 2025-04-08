@@ -1,0 +1,11 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { Label1 Label
+    MoveScaled(16,12,24,4)
+  }
+  { ButtonDescarca Button
+    MoveScaled(5,34,38,14)
+  }
+}

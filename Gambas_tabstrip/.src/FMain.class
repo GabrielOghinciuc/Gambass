@@ -1,0 +1,36 @@
+' Gambas class file
+
+
+Public Sub Form_Open()
+
+  'TabStrip.count = 4
+  
+
+End
+
+Public Sub Button1_Click()
+
+  TextBox3.Value = TextBox1.Value * TextBox2.value / 2
+
+End
+
+Public Sub Button2_Click()
+
+  Dim pi As Float = 3.144592654
+  TextBox5.value = Pi * TextBox4.Value ^ 2
+
+End
+
+Public Sub Button3_Click()
+
+  TextBox8.Value = TextBox6.Value * TextBox7.Value
+
+End
+
+Public Sub Button4_Click()
+
+  Dim H As Float
+  H = TextBox11.Value
+  TextBox12.Value = (TextBox9.Value + TextBox10.Value) * H / 2
+
+End
